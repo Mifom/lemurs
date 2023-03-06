@@ -42,6 +42,17 @@ sudo systemctl disable display-manager.service
 sudo systemctl enable lemurs.service
 ```
 
+### Nix
+
+Lemurs can be built with [nix](https://nixos.org/):
+```bash
+nix build # build nix package
+
+nix develop # enter development environment
+```
+
+**Note**: for now it's only building without install
+
 ### Compiling from source
 
 The `install.sh` script can be used to compile and setup the display manager on
